@@ -1,0 +1,204 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #362e2e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*='col-'] {
+    padding: 15px;
+    float: left;
+    border: 1px solid red;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.row::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #ffbd39;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+
+.marco a {
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    display: flex;
+}
+
+.row1 {
+    height: 300px;
+}
+
+.row1img {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.firsttesto {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#firstimg {
+    width: 350px;
+    border-radius: 200px;
+}
+
+#firstimg:hover {
+    transition: all 0.3s ease-out;
+    width: 400px;
+    cursor: pointer;
+}
+
+.row2 {
+    height: 300px;
+}
+
+#firsth1 {
+    color: #ffbd39;
+    font-weight: bolder;
+}
+
+.secondtesto {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.row3 {
+    height: 300px;
+}
+
+.carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    white-space: nowrap;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    display: inline-block;
+    width: 23%;
+    transition: transform 0.5s ease;
+}
+
+img {
+    margin-top: 50px;
+    width: 30%;
+    height: auto;
+}
+
+.thirdtesto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*='col-'] {
+        width: 100%;
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    img {
+        margin-top: 50px;
+        width: 50%;
+        height: auto;
+    }
+
+    .slide {
+        display: inline-block;
+        width: 23%;
+        transition: transform 0.5s ease;
+    }
+}
