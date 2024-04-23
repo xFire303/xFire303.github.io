@@ -11,9 +11,11 @@ body {
 /* Disabilita lo sfondo azzurro quando si clicca su un elemento */
 * {
     box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-touch-callout: none; /* Disabilita il menu di contesto su iOS */
-    -webkit-user-select: none; /* Disabilita la selezione del testo su iOS */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    /* Disabilita il menu di contesto su iOS */
+    -webkit-user-select: none;
+    /* Disabilita la selezione del testo su iOS */
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -92,6 +94,10 @@ body {
     justify-content: space-evenly;
     padding: 10px;
     margin-left: 50px;
+    position: static;
+    background-color: transparent;
+    height: auto;
+    flex-direction: row;
 }
 
 .navbar a {
@@ -199,18 +205,6 @@ body {
     align-items: center;
 }
 
-.navbar ul {
-    display: flex;
-    position: static;
-    background-color: transparent;
-    height: auto;
-    flex-direction: row;
-}
-
-.hamburger {
-    display: none;
-}
-
 @media only screen and (max-width: 768px) {
     [class*='col-'] {
         width: 100%;
@@ -228,10 +222,28 @@ body {
         align-items: center;
         padding: 0px;
         margin-left: 0px;
+        /* Aggiungi l'animazione */
+        animation-name: fadeIn;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in-out;
     }
 
     .navbar ul.active {
         display: flex;
+    }
+
+    .navbar ul.active a{
+        font-size: 25px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     .hamburger {
@@ -240,7 +252,7 @@ body {
         font-size: 24px;
         cursor: pointer;
         justify-content: flex-end;
-        margin-right: 10px;
+        padding: 10px 20px 0px 0px;
     }
 
     .contacts a {
