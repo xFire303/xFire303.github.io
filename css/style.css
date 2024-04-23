@@ -116,13 +116,6 @@ body {
     display: none;
 }
 
-.marco a {
-    font-size: 20px;
-    font-weight: bolder;
-    text-decoration: none;
-    display: flex;
-}
-
 .row1 {
     height: 500px;
 }
@@ -203,6 +196,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -226,6 +220,7 @@ body {
         animation-name: fadeIn;
         animation-duration: 0.4s;
         animation-timing-function: ease-in-out;
+        margin-top: -70px;
     }
 
     .navbar ul.active {
@@ -234,6 +229,7 @@ body {
 
     .navbar ul.active a{
         font-size: 25px;
+        margin: -100px 0;
     }
 
     @keyframes fadeIn {
@@ -266,7 +262,7 @@ body {
     }
 
     .row3 {
-        height: 500px;
+        height: 520px;
     }
 
     .row1 {
