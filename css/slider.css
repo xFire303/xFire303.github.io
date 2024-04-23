@@ -1,0 +1,24 @@
+.sliderContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.slider {
+    width: 280px;
+    height: 140px;
+}
+
+@media only screen and (max-width: 768px) {
+    .slider {
+        width: 150px;
+        height: 80px;
+    }
+
+    .sliderContainer {
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+}
