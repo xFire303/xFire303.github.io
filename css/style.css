@@ -8,8 +8,15 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Disabilita lo sfondo azzurro quando si clicca su un elemento */
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none; /* Disabilita il menu di contesto su iOS */
+    -webkit-user-select: none; /* Disabilita la selezione del testo su iOS */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 [class*='col-'] {
@@ -248,5 +255,13 @@ body {
 
     .row3 {
         height: 500px;
+    }
+
+    .row1 {
+        height: 400px;
+    }
+
+    .row2 {
+        height: 600px;
     }
 }
