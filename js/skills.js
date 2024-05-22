@@ -16,7 +16,7 @@ let images = [
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg",
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/460px-Flask_logo.svg.png"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/1280px-Spring_Framework_Logo_2018.svg.png"
     ]
 ];
 
@@ -38,4 +38,4 @@ function changeImg() {
 }
 
 // Run function when page loads
-window.onload = changeImg;
+window.onload = changeImg();
